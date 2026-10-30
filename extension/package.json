@@ -1,0 +1,35 @@
+{
+    "name": "job-automation-extension",
+    "displayName": "The Ghost",
+    "version": "0.0.1",
+    "description": "Browser-resident intelligence for job automation.",
+    "author": "Antigravity",
+    "scripts": {
+        "dev": "plasmo dev",
+        "build": "plasmo build",
+        "package": "plasmo package"
+    },
+    "dependencies": {
+        "plasmo": "0.84.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@plasmohq/prettier-plugin-plasmo": "0.1.2",
+        "@types/node": "20.11.24",
+        "@types/react": "18.2.61",
+        "@types/react-dom": "18.2.19",
+        "typescript": "5.3.3"
+    },
+    "manifest": {
+        "host_permissions": [
+            "https://*/*"
+        ],
+        "permissions": [
+            "storage",
+            "tabs",
+            "scripting",
+            "activeTab"
+        ]
+    }
+}
